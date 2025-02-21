@@ -18,16 +18,28 @@ option "operating_currency" "EUR"
 
 ;;; Contas
 2025/01/01 open Capital:51CapitalSubscrito EUR
-2025/01/01 open Ativo:12DepósitosÀordem EUR
 2025/01/01 open Ativo:11Caixa EUR
+2025/01/01 open Ativo:12DepósitosÀordem EUR
+2025/01/01 open Ativo:12DepósitosÀordem:121BancoA EUR
+2025/01/01 open Ativo:31Compras EUR
+2025/01/01 open Ativo:31Compras:311Mercadorias EUR 
 2025/01/01 open Ativo:31Compras:311Mercadorias:3111BebidaA EUR
 2025/01/01 open Ativo:31Compras:311Mercadorias:3112Gelado EUR
 2025/01/01 open Ativo:31Compras:318DescontosAbatimentos EUR
+2025/01/01 open Ativo:32Mercadorias EUR
+2025/01/01 open Ativo:32Mercadorias:321Armazém EUR
 2025/01/01 open Ativo:32Mercadorias:321Armazém:3211BebidaA EUR
 2025/01/01 open Ativo:32Mercadorias:321Armazém:3212Gelado EUR
+2025/01/01 open Passivo:22Fornecedores EUR
 2025/01/01 open Passivo:22Fornecedores:221FornecedoresCC  EUR
+2025/01/01 open Passivo:22Fornecedores:221FornecedoresCC:2211Gerais  EUR
+2025/01/01 open Gastos:61CustoDasMercadoriasVendidas EUR
 2025/01/01 open Gastos:61CustoDasMercadoriasVendidas:611Mercadorias EUR
+2025/01/01 open Rendimentos:71Vendas EUR
+2025/01/01 open Rendimentos:71Vendas:711Mercadorias EUR
 2025/01/01 open Rendimentos:71Vendas:711Mercadorias:7111Gelados EUR
+2025/01/01 open Rendimentos:71Vendas:711Mercadorias:7112BebidaA EUR  
+2025/01/01 open Rendimentos:78OutrosRendimentos EUR
 2025/01/01 open Rendimentos:78OutrosRendimentos:782DescontosPP EUR
 
 ;;; Prices
