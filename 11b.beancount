@@ -19,7 +19,6 @@ option "operating_currency" "EUR"
 ;;; Contas
 
 2025/01/01 open Ativo:11Caixa EUR
-2025/01/01 open Ativo:12DepósitosÀordem EUR
 2025/01/01 open Ativo:12DepósitosOrdem:121Banco EUR
 2025/01/01 open Passivo:22Fornecedores EUR
 2025/01/01 open Passivo:22Fornecedores:221FornecedoresCC  EUR
