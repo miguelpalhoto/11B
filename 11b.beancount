@@ -1,0 +1,60 @@
+option "title" "Empresa A"
+option "name_assets" "Ativo"
+option "name_liabilities" "Passivo"
+option "name_equity" "Capital"
+option "name_income" "Rendimentos"
+option "name_expenses" "Gastos"
+option "operating_currency" "EUR"
+
+;;; Comoditties
+2002/01/01 commodity EUR
+  export: "EUR"
+2025/01/01 commodity GELADO
+  export: "GELADOO"
+  name:"Gelados genérico"
+2025/01/01 commodity BEBIDA_A
+  export: "BEBIDAA"
+  name:"Bebida A"
+
+;;; Contas
+
+2025/01/01 open Ativo:11Caixa EUR
+2025/01/01 open Ativo:12DepósitosÀordem EUR
+2025/01/01 open Ativo:12DepósitosOrdem:121Banco EUR
+2025/01/01 open Passivo:22Fornecedores EUR
+2025/01/01 open Passivo:22Fornecedores:221FornecedoresCC  EUR
+2025/01/01 open Ativo:24Estado EUR
+2025/01/01 open Ativo:24Estado:243IVA EUR
+2025/01/01 open Ativo:24Estado:243IVA:2432Dedutível EUR
+2025/01/01 open Ativo:24Estado:243IVA:2432Dedutível:24322Investimentos EUR
+2025/01/01 open Passivo:27OutrasContas EUR
+2025/01/01 open Passivo:27OutrasContas:271FornecedoresInvestimento EUR
+2025/01/01 open Passivo:27OutrasContas:271FornecedoresInvestimento:2711ContasGerais EUR
+2025/01/01 open Ativo:31Compras EUR
+2025/01/01 open Ativo:31Compras:311Mercadorias EUR
+2025/01/01 open Ativo:31Compras:311Mercadorias:3111BebidaA EUR
+2025/01/01 open Ativo:31Compras:311Mercadorias:3112Gelado EUR
+2025/01/01 open Ativo:31Compras:318DescontosAbatimentos EUR
+2025/01/01 open Ativo:32Mercadorias EUR
+2025/01/01 open Ativo:32Mercadorias:321Armazém EUR
+2025/01/01 open Ativo:32Mercadorias:321Armazém:3211BebidaA EUR
+2025/01/01 open Ativo:32Mercadorias:321Armazém:3212Gelado EUR
+2025/01/01 open Ativo:43AtivosFixosTangíveis EUR
+2025/01/01 open Capital:51CapitalSubscrito EUR
+2025/01/01 open Gastos:61CustoDasMercadoriasVendidas EUR
+2025/01/01 open Gastos:61CustoDasMercadoriasVendidas:611Mercadorias EUR
+2025/01/01 open Rendimentos:71Vendas:711Mercadorias EUR
+2025/01/01 open Rendimentos:71Vendas EUR
+2025/01/01 open Rendimentos:71Vendas:711Mercadorias:7111Gelados EUR
+2025/01/01 open Rendimentos:78OutrosRendimentos EUR
+2025/01/01 open Rendimentos:78OutrosRendimentos:782DescontosPP EUR
+
+
+2025-01-01 * "Saldo Inicial"
+    Ativo:12DepósitosOrdem:121Banco 20000 EUR
+    Capital:51CapitalSubscrito
+
+2025-01-27 * "Compra a prazo de equipamento de escritório" 
+    Ativo:43AtivosFixosTangíveis 12000 EUR
+    Ativo:24Estado:243IVA:2432Dedutível:24322Investimentos 2760 EUR
+    Passivo:27OutrasContas:271FornecedoresInvestimento:2711ContasGerais
